@@ -1,0 +1,8 @@
+name: chocolate
+
+dependencies:
+  - pandas=1.3
+  - numpy=1.21
+  - sm=1.13
+  - matplotlib=3.5
+  - nltk=3.7
