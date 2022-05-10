@@ -3,7 +3,7 @@
 .PHONY: env
 env: 
 	mamba env create -f environment.yml 
-	base -ic 'conda activate chocolate;python -m ipykernel install --user --name chocolate --display-name "IPython - chocolate"'
+	bash -ic 'conda activate chocolate;python -m ipykernel install --user --name chocolate --display-name "IPython - chocolate"'
 	
 .PHONY : all
 all :
