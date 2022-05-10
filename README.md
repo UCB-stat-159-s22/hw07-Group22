@@ -15,3 +15,15 @@
 ## Installation and Environment
 
 ## Make
+For automization, this project include a Makefile that has an `env`  target to make an environment with all necessary libraries for successful execution and an `all`  target that runs all the notebooks.
+
+You can run the `env` target via:
+```
+make env
+```
+
+and the `all` target via:
+```
+make all
+```
+
