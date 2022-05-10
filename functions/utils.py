@@ -6,7 +6,15 @@ import re
 import matplotlib.pyplot as plt
 from IPython.display import display_html
 
+
 def country_common_charac(chocolate_df, country_name):
+    """
+    Inputs:
+        chocolate_df: dataframe containing chocolate bars info
+        country_name: a country of bean origin
+    Output:
+        a dataframe containing all the characteristics for that country with their frequency and percentage of appearance
+    """
     chocolate_country = chocolate_df[chocolate_df['Country of Bean Origin'] == country_name][["Most Memorable Characteristics"]]
     charac_lst = chocolate_country['Most Memorable Characteristics'].tolist()
     lst = []
