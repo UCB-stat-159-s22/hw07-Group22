@@ -12,4 +12,5 @@ all :
 	jupyter execute lia_notebook.ipynb
 	jupyter execute Cocoa_percent_change_analysis.ipynb
 	jupyter execute common_charac_for_country_analysis.ipynb
+	jupyter execute main.ipynb
 	
