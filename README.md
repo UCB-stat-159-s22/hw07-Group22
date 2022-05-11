@@ -1,7 +1,9 @@
 # Chocolate Bar Analysis
 
 ### UC Berkeley Stat 159/259 Reproducible and Collaborative Statistical Data Science
-#### Spring 2022 final project
+#### Spring 2022 final project 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-s22/hw07-Group22.git/HEAD?labpath=main.ipynb)
 
 *Group members:*
 
