@@ -26,6 +26,7 @@ http://flavorsofcacao.com/chocolate_database.html
 
 4. Analyze high and low average ratings for company locations and see if ingredients used at those locations contribute to those ratings.
 
+5. Regresssion analysis to determine memorable characteristics that have significant inlfuence on ratings.
 
 ## Installation and Environment
 ## Installation
