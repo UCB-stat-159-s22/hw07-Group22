@@ -41,7 +41,7 @@ pip install .
 ```
 
 ## Make
-For automization, this project includes a Makefile that has an `env`  target to make an environment with all necessary libraries and an `all`  target that runs all the notebooks.
+For automization, this project includes a Makefile that has an `env`  target to make an environment with all necessary libraries, an `all`  target that runs all the notebooks, and a `clean` target to clean figures, tables, and build book.
 
 You can run the `env` target via:
 ```
@@ -51,6 +51,11 @@ make env
 and the `all` target via:
 ```
 make all
+```
+
+and the `clean` target via:
+```
+make clean
 ```
 
 ## Tests
