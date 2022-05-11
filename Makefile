@@ -8,7 +8,7 @@ env:
 .PHONY : all
 all :
 	jupyter execute ingredients_analysis.ipynb
-	jupyter execute minji.ipynb
+	jupyter execute analysis_for_review_ratings.ipynb
 	jupyter execute lia_notebook.ipynb
 	jupyter execute Cocoa_percent_change_analysis.ipynb
 	jupyter execute common_charac_for_country_analysis.ipynb
