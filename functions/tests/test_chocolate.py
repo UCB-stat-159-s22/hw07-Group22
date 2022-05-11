@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 from IPython.display import display_html
 from functions.utils import *
 
-data = "data/chocolate.csv"
+path = "data/chocolate.csv"
+data = pd.read_csv(path)
 
 def test_charac():
     charac_Malaysia = country_common_charac(data, 'Malaysia')
@@ -19,5 +20,5 @@ def test_charac():
     
     
 def test_rangescore():
-	test_range = rangeScore(data['Rating'])
+	test_range = data['Rating'].apply(rangeScore)
 	assert isinstance(test_range[0], str)
