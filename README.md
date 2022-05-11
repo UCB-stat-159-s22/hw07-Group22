@@ -3,8 +3,6 @@
 ### UC Berkeley Stat 159/259 Reproducible and Collaborative Statistical Data Science
 #### Spring 2022 final project
 
-*Topic*
-
 *Group members:*
 
 * Lia Chin-Purcell
@@ -20,8 +18,15 @@
 
 2. Analyze the characteristics used to describe different chocolate bars and see if cocoa beans from a specific country of bean origins has a unique, standout characteristic.
 
+3. Analyze the most memorable charactersitics and cocoa percent in chocolate bars by searating review rating ranges. 
+
 
 ## Installation and Environment
+## Installation
+This project can currently only be installed from source, via
+```
+pip install .
+```
 
 ## Make
 For automization, this project includes a Makefile that has an `env`  target to make an environment with all necessary libraries and an `all`  target that runs all the notebooks.
