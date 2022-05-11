@@ -14,3 +14,9 @@ all :
 	jupyter execute analysis_notebooks/common_charac_for_country_analysis.ipynb
 	jupyter execute main.ipynb
 	
+.PHONY : clean
+clean :
+	rm -f figures/*
+	rm -f tables/*.csv
+	rm -rf _build/*
+
