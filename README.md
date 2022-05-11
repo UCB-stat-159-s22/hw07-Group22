@@ -11,6 +11,7 @@
 * Minji Park
 * Runting Han
 * Jenea Spinks
+
 ## Dataset
 
 ## Project Goals
