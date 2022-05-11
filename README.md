@@ -11,6 +11,10 @@
 * Jenea Spinks
 
 ## Dataset
+The dataset used in this analysis contains overall 2,500 plain dark chocolate bars rating.
+
+This can be found at the following link:
+http://flavorsofcacao.com/chocolate_database.html
 
 ## Project Goals
 
