@@ -44,3 +44,22 @@ def display_dfs(dfs, gap=50, justify='center'):
     </div>
     """
     display_html(html, raw=True)
+
+def rangeScore(x):
+    '''
+    Set the bins for the score-range.
+    input: dataframe with score value
+    output: assigned score range
+    '''
+    value = ''
+    if (x>= 0 and x < 1):
+        value = '0-1'
+    elif (x>= 1 and x < 2):
+        value = '1-2'
+    elif (x>= 2 and x < 3):
+        value = '2-3'
+    elif (x>= 3 and x < 4):
+        value = '3-4'
+    elif (x >= 4 and x  < 5):
+        value = '4-5'
+    return value
