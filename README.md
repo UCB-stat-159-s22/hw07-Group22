@@ -4,6 +4,7 @@
 #### Spring 2022 final project 
 
 Binder Link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/UCB-stat-159-s22/hw07-Group22.git/HEAD?labpath=main.ipynb)
+
 Github Page: https://ucb-stat-159-s22.github.io/hw07-Group22/
 
 *Group members:*
