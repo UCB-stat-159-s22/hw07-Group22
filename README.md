@@ -7,6 +7,7 @@ Binder Link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.o
 
 Github Page: https://ucb-stat-159-s22.github.io/hw07-Group22/
 
+
 *Group members:*
 
 * Lia Chin-Purcell
