@@ -1,3 +1,20 @@
+Metadata-Version: 2.1
+Name: functions
+Version: 0.0.1
+Summary: A package for analyzing chocolate datasets
+Home-page: UNKNOWN
+Author: Jenea Spinks, Lia Chin-Purcell, Minji Park, Runting Han
+Author-email: minjipark7@berkeley.edu, J.d.spinks@berkeley.edu, hrt@berkeley.edu, lia_chinpurcell@berkeley.edu
+License: BSD 3-Clause License
+Keywords: tools
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.9.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # Chocolate Bar Analysis
 
 ### UC Berkeley Stat 159/259 Reproducible and Collaborative Statistical Data Science
@@ -15,11 +32,6 @@
 ## Dataset
 
 ## Project Goals
-
-1. Analyze the difference of cocoa percent in different chocolate bars produced by different companies and analyze whether the cocoa percent in different chocolate bars has changed over years.
-
-2. Analyze the characteristics used to describe different chocolate bars and see if cocoa beans from a specific country of bean origins has a unique, standout characteristic.
-
 
 ## Installation and Environment
 
@@ -44,5 +56,7 @@ pytest functions
 
 ## License
 This project is released under the terms of the BSD 3-clause License.
+
+
 
 
