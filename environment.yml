@@ -3,7 +3,6 @@ name: chocolate
 dependencies:
   - pandas=1.3
   - numpy=1.21
-  - sm
   - matplotlib=3.5
   - nltk=3.7
   - ipykernel

@@ -10,7 +10,7 @@ from functions.utils import *
 data = "data/chocolate.csv"
 
 def test_charac():
-    charac_Malaysia = country_common_charac(chocolate, 'Malaysia')
+    charac_Malaysia = country_common_charac(data, 'Malaysia')
     frequency_output = charac_Malaysia['frequency'].tolist()
 
     assert isinstance(charac_Malaysia, pd.DataFrame)
