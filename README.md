@@ -27,3 +27,8 @@ and the `all` target via:
 make all
 ```
 
+## Tests
+You can run the project test suite via
+```
+pytest functions
+```
