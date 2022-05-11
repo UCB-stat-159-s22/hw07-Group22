@@ -7,3 +7,4 @@ dependencies:
   - nltk=3.7
   - ipykernel
   - pytest
+  - statsmodels
