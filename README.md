@@ -11,6 +11,9 @@
 * Minji Park
 * Runting Han
 * Jenea Spinks
+## Dataset
+
+## Project Goals
 
 ## Installation and Environment
 
@@ -32,3 +35,8 @@ You can run the project test suite via
 ```
 pytest functions
 ```
+
+## License
+This project is released under the terms of the BSD 3-clause License.
+
+
