@@ -1,0 +1,2172 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Chocolate Bars Analysis &#8212; STAT 159 Group 22 Book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="/user/minjipark7//proxy/absolute/8000/main.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">STAT 159 Group 22 Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
+   Dark Chocolate Bars Analysis
+  </a>
+ </li>
+</ul>
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/main.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/UCB-stat-159-s22/hw07-Group22"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/UCB-stat-159-s22/hw07-Group22/issues/new?title=Issue%20on%20page%20%2Fmain.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/UCB-stat-159-s22/hw07-Group22/master?urlpath=tree/docs/main.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Dark Chocolate Bars Analysis
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-packages">
+     Import packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-the-company-locations-with-the-highest-and-lowest-average-ratings">
+   1. Analyzing the Company Locations with the highest and lowest average ratings
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ingredients-with-best-average-rating">
+     Ingredients with best average rating
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-5-most-frequent-words-in-most-memorable-characteristics-and-cocoa-percent-by-review-interval">
+   2. Analyzing 5 most frequent words in Most Memorable Characteristics and Cocoa Percent by review interval
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-memorable-characteristics-of-high-and-and-low-rated-chocolate-bars-with-a-regression-analysis">
+   3. Analyzing memorable characteristics of high and and low rated chocolate bars with a regression analysis
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-the-difference-of-cocoa-percent-between-different-companies">
+   4. Analyzing the Difference of Cocoa Percent between Different Companies
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-if-the-average-cocoa-percent-of-different-chocolate-bars-has-changed-over-times">
+   5. Analyzing if the Average Cocoa Percent of Different Chocolate Bars has changed Over Times
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analysis-of-testing-if-a-country-of-bean-origin-has-a-standout-characteristics">
+   6. Analysis of testing if a country of bean origin has a standout characteristics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#author-contributions">
+   Author Contributions
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Dark Chocolate Bars Analysis</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Dark Chocolate Bars Analysis
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#introduction">
+     Introduction
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#import-packages">
+     Import packages
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-the-company-locations-with-the-highest-and-lowest-average-ratings">
+   1. Analyzing the Company Locations with the highest and lowest average ratings
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ingredients-with-best-average-rating">
+     Ingredients with best average rating
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-5-most-frequent-words-in-most-memorable-characteristics-and-cocoa-percent-by-review-interval">
+   2. Analyzing 5 most frequent words in Most Memorable Characteristics and Cocoa Percent by review interval
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-memorable-characteristics-of-high-and-and-low-rated-chocolate-bars-with-a-regression-analysis">
+   3. Analyzing memorable characteristics of high and and low rated chocolate bars with a regression analysis
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-the-difference-of-cocoa-percent-between-different-companies">
+   4. Analyzing the Difference of Cocoa Percent between Different Companies
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analyzing-if-the-average-cocoa-percent-of-different-chocolate-bars-has-changed-over-times">
+   5. Analyzing if the Average Cocoa Percent of Different Chocolate Bars has changed Over Times
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analysis-of-testing-if-a-country-of-bean-origin-has-a-standout-characteristics">
+   6. Analysis of testing if a country of bean origin has a standout characteristics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#author-contributions">
+   Author Contributions
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="dark-chocolate-bars-analysis">
+<h1>Dark Chocolate Bars Analysis<a class="headerlink" href="#dark-chocolate-bars-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>In this analysis, we used a dataset containing over 2500 plain dark chocolate bars’ rateings. Analysis is performed through different features including analyzing the average ratings, the most memorable characteristics, company locations, and etc.</p>
+</div>
+<div class="section" id="import-packages">
+<h2>Import packages<a class="headerlink" href="#import-packages" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display_html</span>
+<span class="kn">from</span> <span class="nn">functions.utils</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="analyzing-the-company-locations-with-the-highest-and-lowest-average-ratings">
+<h1>1. Analyzing the Company Locations with the highest and lowest average ratings<a class="headerlink" href="#analyzing-the-company-locations-with-the-highest-and-lowest-average-ratings" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we analyze the company locations with the highest and lowest average ratings. By finding these company location, we can examine if there are any characterics/features that contribute to these average rating.</p>
+<p>We first visualize the average ratings of each company location.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;figures/CompanyLocation_MeanRating.jpg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/main_8_0.jpg" src="_images/main_8_0.jpg" />
+</div>
+</div>
+<p>From this plot, we can see that most of the countries’ rating were between the range of 2.7 and 3.5 except for six locations; three above a rating of  3.5  and three below 2.7. We drew  lines at these numbers to help visualize these cutoffs. The three company locations with the high ratings are Scotland, Chile and Guatemala, with Scotland being the higest and the three lowest are SaoTome, Puerto Rico and Colombia, with Sao Tome being the worst.</p>
+<p>The rating of these six locations are used for further analysis to help identify any links to the ingredients that may contribute to the ratings of these chocolate bars.</p>
+<div class="section" id="ingredients-with-best-average-rating">
+<h2>Ingredients with best average rating<a class="headerlink" href="#ingredients-with-best-average-rating" title="Permalink to this headline">¶</a></h2>
+<p>Using datasets containing only the rows of the six countries from the plot above, we analyze how ingredients affect the overall ratings of chocolates and how this relationship links to the top three and bottom three rated locations.</p>
+<p>We visualize the average ratings of each ingredients to identify and ingredients with distinguishably high or low ratings.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;figures/Ingredients_MeanRatings.jpg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/main_14_0.jpg" src="_images/main_14_0.jpg" />
+</div>
+</div>
+<p>Note: The column Ingredients is of the form “#- list of ingredients”. The “#” = represents the number of ingredients in the chocolate; B = Beans, S = Sugar, S* = Sweetener other than white cane or beet sugar, C = Cocoa Butter, V = Vanilla, L = Lecithin, Sa = Salt.</p>
+<p>From the scatterplot above, the ingredient 3- B,S*,Sa has the lowest overall mean rating and the ingredients 3- B,S,C and 2-B,S have the highest ratings within the dataset.</p>
+<p>Now, using the plot of the ingredients and ratings, we look at the ingredients of the top three and bottom three rated company locations to observe wheher low ratings may have some of the the low rated ingredients among all the companies and vice versa for the high rated locations.</p>
+<p>The two datasets below show all the ingredients for each of the six location within the dataset. The first shows the highest rated locations and the second, the lowest rated ingredients.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">max_comp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tables/Three_companies_with_highest_average rating.csv&#39;</span><span class="p">)</span>
+<span class="n">max_comp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company Location</th>
+      <th>Ingredients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Chile</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Chile</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Scotland</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Scotland</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Guatemala</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Guatemala</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Guatemala</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Guatemala</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Scotland</td>
+      <td>3- B,S,C</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Scotland</td>
+      <td>3- B,S,C</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">min_comp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tables/Three_companies_with_lowest_average rating.csv&#39;</span><span class="p">)</span>
+<span class="n">min_comp</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company Location</th>
+      <th>Ingredients</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Colombia</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Sao Tome</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Puerto Rico</td>
+      <td>2- B,S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Sao Tome</td>
+      <td>2- B,S</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>From the overall analysis of both the company locations and ingredients above, the top three rated company locations have the highest overall rated ingredients  which is 2-B,S and 3-B,S,C. However, the lowest rated companies does not contain the lowest rated ingredients amongst the companies but rather some the ingredients from the ebst rated companies. The ingredients for these three locations are Nan values and 2-B,C ingredients. The low ratings of these company locations may be linked to another feature/characteristic in the dataset than can be examined through further analysis.</p>
+<p>To build upon the exploratory analysis of the ingredients and average ratings, we look at how the average ratings has changed over time in addition to the majority ingredient used within that year. From this, we can observe any relationships between any decrease or increases in the average ratings and the ingredients used. At each point on the scatterplot, there is the name of the ingredient that was used the most in the year.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;figures/Ingredients_MeanRatings_Year.jpg&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/main_23_0.jpg" src="_images/main_23_0.jpg" />
+</div>
+</div>
+<p>From the figure above, there was an overall increase in the average rating in 2011. Some of the ingredients that were used in the company with the best ratings  (2-B,S) were the majority ingredients used in many of the years. Throughout each year, the majority ingredients used was 2- B,S with some years having a mafority of 2-B,C  and 1,B. There was no indication of a change within the ingredients used when there was an overall increase in the average ratings. Since the ingredients does not provide signficant information/relationships for the high and low ratings in the plots then there may be other characteristics in the dataset so can be linked to the ratings shown in the dataset</p>
+</div>
+</div>
+<div class="section" id="analyzing-5-most-frequent-words-in-most-memorable-characteristics-and-cocoa-percent-by-review-interval">
+<h1>2. Analyzing 5 most frequent words in Most Memorable Characteristics and Cocoa Percent by review interval<a class="headerlink" href="#analyzing-5-most-frequent-words-in-most-memorable-characteristics-and-cocoa-percent-by-review-interval" title="Permalink to this headline">¶</a></h1>
+<p>Moving on, in this section, we will focus on ‘Most Memorable Characteristics’ feature and find out the 5 most frequent words in this feature by review interval 1-2 and 4-5.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;figures/five most freqeunt words in 1-2 &amp; 4-5 review rating.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/main_27_0.png" src="_images/main_27_0.png" />
+</div>
+</div>
+<p>Through the bar plot above, we can see that the frequent words for review rating 1-2 and the frequent words for 4-5 are clearly different. When review rating is 1-2, ‘bitter’ is most frequent, and in the case of ‘very’, it is a word that comes before ‘bitter’ or ‘strong’, so it can be seen that review rating is not good if it has a particularly strong taste. When the review rating is 4-5, it can be seen that ‘creamy’, ‘cocoa’, and ‘nutty’ are the most popular chocolate flavors.</p>
+<p>Second, we will see how different the cocoa percent by review interval.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;figures/Box plot for Cocoa Percent by review interval.png&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/main_29_0.png" src="_images/main_29_0.png" />
+</div>
+</div>
+<p>Through the side by side box plot, it can be seen that the higher the review score, the lower the cocoa percent. In particular, in the section with a review score of 1-2, the mode of the cocoa percent is 100%, but in the review score of 4-5, it can be seen that most of them are distributed between 70%. Therefore, 70% of cocoa percent is the most appropriate, and excessive cocoa such as 100% cocoa percent has a negative effect on the review score.</p>
+</div>
+<div class="section" id="analyzing-memorable-characteristics-of-high-and-and-low-rated-chocolate-bars-with-a-regression-analysis">
+<h1>3. Analyzing memorable characteristics of high and and low rated chocolate bars with a regression analysis<a class="headerlink" href="#analyzing-memorable-characteristics-of-high-and-and-low-rated-chocolate-bars-with-a-regression-analysis" title="Permalink to this headline">¶</a></h1>
+<p>Here in this part, e use a regression analysis to determine memorable characteristics that have significant influence on ratings. For example, does ‘bitter’ have a positive or negative relationship with rating? What about ‘creamy’? Which memorable characteristics have the most statistically significant effect, and which have the largest effect?</p>
+<p>Memorable characteristics of a bar are terms generally relating to anything from texture, flavor, overall opinion, etc.</p>
+<p>To do this we create an input X data frame with all of the dummies for each characteristic, so in other words it has a feature for each unique memorable characteristics, of which there are 734. For each row, if that bar had that characteristic, there is a 1, else there is a 0. We then fit a standard OLS model where this is the input, and the outcome variable is rating, which is continuous.</p>
+<p>We then take the model outputs and put them into a data frame for easy filtering and manipulation. Specifically, we want to see which memorable characteristics are most statistically significant, and we want to look at memorable characteristics that had a negative effect and also separately ones that had a positive effect. We filter accordingly, which a lower threshold for negative effects because there were more statistically significant coefficients here.</p>
+<p>The results of this analysis are shown below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_disp_high</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tables/good_review_memorable_characteristics.csv&#39;</span><span class="p">)</span>
+<span class="n">df_disp_high</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>p-value</th>
+      <th>coef</th>
+      <th>name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>23</td>
+      <td>8.718429e-03</td>
+      <td>0.234444</td>
+      <td>balanced</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>38</td>
+      <td>2.504779e-03</td>
+      <td>0.868794</td>
+      <td>black current</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>43</td>
+      <td>5.182544e-04</td>
+      <td>0.420081</td>
+      <td>blackberry</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>47</td>
+      <td>1.547497e-02</td>
+      <td>0.970770</td>
+      <td>blueberries</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>59</td>
+      <td>3.637186e-02</td>
+      <td>0.206921</td>
+      <td>bright fruit</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>70</td>
+      <td>1.872272e-02</td>
+      <td>0.714407</td>
+      <td>burnt brownie</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>97</td>
+      <td>2.626219e-02</td>
+      <td>0.464276</td>
+      <td>cardamom</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>98</td>
+      <td>1.070548e-02</td>
+      <td>0.714730</td>
+      <td>cardamon</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>120</td>
+      <td>1.070548e-02</td>
+      <td>0.714730</td>
+      <td>chocolate and grapes</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>128</td>
+      <td>4.846590e-02</td>
+      <td>0.365115</td>
+      <td>cinamon</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>129</td>
+      <td>1.070548e-02</td>
+      <td>0.714730</td>
+      <td>cinamon and nutmeg</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>148</td>
+      <td>3.400155e-03</td>
+      <td>0.197708</td>
+      <td>complex</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>154</td>
+      <td>2.146852e-11</td>
+      <td>0.257082</td>
+      <td>creamy</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>160</td>
+      <td>5.004582e-03</td>
+      <td>0.255169</td>
+      <td>dark berry</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>169</td>
+      <td>6.809833e-03</td>
+      <td>0.405977</td>
+      <td>deep cocoa</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>178</td>
+      <td>1.070548e-02</td>
+      <td>0.714730</td>
+      <td>distinct choco and graham</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>191</td>
+      <td>4.160048e-03</td>
+      <td>0.152537</td>
+      <td>dried fruit</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>220</td>
+      <td>3.595295e-02</td>
+      <td>0.820436</td>
+      <td>floral notes</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>223</td>
+      <td>4.560791e-02</td>
+      <td>0.327522</td>
+      <td>fragrant</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>227</td>
+      <td>2.792496e-02</td>
+      <td>0.124437</td>
+      <td>fruity</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>243</td>
+      <td>8.558470e-03</td>
+      <td>0.287574</td>
+      <td>grape</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>245</td>
+      <td>2.588792e-03</td>
+      <td>0.270083</td>
+      <td>grapes</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>246</td>
+      <td>1.070548e-02</td>
+      <td>0.714730</td>
+      <td>grapes and honey</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>270</td>
+      <td>3.734749e-02</td>
+      <td>0.881848</td>
+      <td>herb</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>417</td>
+      <td>2.014484e-02</td>
+      <td>0.496485</td>
+      <td>minty</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>442</td>
+      <td>1.489172e-02</td>
+      <td>0.082402</td>
+      <td>nutty</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>459</td>
+      <td>1.420627e-02</td>
+      <td>0.276283</td>
+      <td>orange</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>478</td>
+      <td>4.281970e-02</td>
+      <td>0.580286</td>
+      <td>perfectly balanced roast</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>490</td>
+      <td>2.549479e-02</td>
+      <td>0.301897</td>
+      <td>powerful</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>492</td>
+      <td>7.055627e-03</td>
+      <td>0.817497</td>
+      <td>pronounced berry</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>505</td>
+      <td>2.486862e-02</td>
+      <td>0.636411</td>
+      <td>raspberries</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>506</td>
+      <td>8.492680e-05</td>
+      <td>0.484032</td>
+      <td>raspberry</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>511</td>
+      <td>1.798646e-02</td>
+      <td>0.120152</td>
+      <td>rich</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>515</td>
+      <td>3.758406e-02</td>
+      <td>0.320306</td>
+      <td>rich choco</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>587</td>
+      <td>4.080658e-02</td>
+      <td>0.138674</td>
+      <td>smoke</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>592</td>
+      <td>2.581436e-02</td>
+      <td>0.177159</td>
+      <td>smooth</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>616</td>
+      <td>2.146448e-03</td>
+      <td>0.202896</td>
+      <td>spice</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>656</td>
+      <td>1.659922e-02</td>
+      <td>0.800632</td>
+      <td>sunflower</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>663</td>
+      <td>2.117955e-02</td>
+      <td>0.644294</td>
+      <td>sweet spice</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>667</td>
+      <td>5.395730e-03</td>
+      <td>0.776479</td>
+      <td>tangerine</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>671</td>
+      <td>2.327919e-02</td>
+      <td>0.119264</td>
+      <td>tart</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>687</td>
+      <td>9.175230e-03</td>
+      <td>0.444553</td>
+      <td>tropical</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_disp_low</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;tables/bad_review_memorable_characteristics.csv&#39;</span><span class="p">)</span>
+<span class="n">df_disp_low</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>p-value</th>
+      <th>coef</th>
+      <th>name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>35</td>
+      <td>2.097273e-27</td>
+      <td>-0.598600</td>
+      <td>bitter</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>79</td>
+      <td>3.158706e-04</td>
+      <td>-0.611484</td>
+      <td>burnt rubber</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>81</td>
+      <td>2.250781e-04</td>
+      <td>-1.035270</td>
+      <td>burnt up front</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>109</td>
+      <td>2.912281e-06</td>
+      <td>-0.463721</td>
+      <td>chemical</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>110</td>
+      <td>2.781201e-04</td>
+      <td>-0.733152</td>
+      <td>chemical off</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>176</td>
+      <td>3.395652e-04</td>
+      <td>-0.262095</td>
+      <td>dirty</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>188</td>
+      <td>1.644918e-08</td>
+      <td>-1.586933</td>
+      <td>dominate off note</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>198</td>
+      <td>1.567257e-05</td>
+      <td>-0.145713</td>
+      <td>earthy</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>233</td>
+      <td>7.896309e-05</td>
+      <td>-0.649563</td>
+      <td>fuel</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>259</td>
+      <td>1.813871e-05</td>
+      <td>-0.430084</td>
+      <td>harsh</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>280</td>
+      <td>2.742976e-10</td>
+      <td>-1.785270</td>
+      <td>high intensity bitter</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>344</td>
+      <td>1.180461e-05</td>
+      <td>-0.489870</td>
+      <td>medicinal</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>355</td>
+      <td>3.566587e-05</td>
+      <td>-0.285710</td>
+      <td>metallic</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>420</td>
+      <td>7.111959e-06</td>
+      <td>-0.203626</td>
+      <td>molasses</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>426</td>
+      <td>4.596905e-04</td>
+      <td>-0.999559</td>
+      <td>multiple off flavors</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>446</td>
+      <td>3.076028e-04</td>
+      <td>-0.624773</td>
+      <td>off flavor</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>448</td>
+      <td>7.452215e-04</td>
+      <td>-0.357680</td>
+      <td>off note</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>449</td>
+      <td>1.003918e-06</td>
+      <td>-0.402645</td>
+      <td>off notes</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>472</td>
+      <td>1.061671e-04</td>
+      <td>-0.518114</td>
+      <td>pastey</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>495</td>
+      <td>1.432876e-09</td>
+      <td>-0.390555</td>
+      <td>pungent</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>541</td>
+      <td>4.297556e-05</td>
+      <td>-0.390988</td>
+      <td>rubber</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>543</td>
+      <td>9.077753e-07</td>
+      <td>-0.370354</td>
+      <td>rubbery</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>597</td>
+      <td>4.093441e-05</td>
+      <td>-0.151816</td>
+      <td>sour</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>615</td>
+      <td>3.076028e-04</td>
+      <td>-0.624773</td>
+      <td>spciy</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>632</td>
+      <td>4.568877e-07</td>
+      <td>-0.957823</td>
+      <td>strong bitter</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>633</td>
+      <td>1.313356e-11</td>
+      <td>-1.470973</td>
+      <td>strong chemical</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>680</td>
+      <td>1.038224e-15</td>
+      <td>-2.285270</td>
+      <td>this is not chocolate</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>700</td>
+      <td>5.753289e-05</td>
+      <td>-0.429216</td>
+      <td>unrefined</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>702</td>
+      <td>2.644970e-05</td>
+      <td>-0.371513</td>
+      <td>vanilla</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>707</td>
+      <td>1.151493e-22</td>
+      <td>-1.761185</td>
+      <td>very bitter</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>708</td>
+      <td>7.724319e-04</td>
+      <td>-0.991622</td>
+      <td>very bland</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>From our output, we can see that some of the most positive characteristics (by p-value) are fruit descriptors such as ‘blackberry, blueberries, grape’ or spice descriptors such as ‘cinnamon, cardamon, nutmeg’.</p>
+<p>The most negative characteristics  (by p-value) are reference bitter or burn flavors or chemical flavors, or simply ‘off’.</p>
+</div>
+<div class="section" id="analyzing-the-difference-of-cocoa-percent-between-different-companies">
+<h1>4. Analyzing the Difference of Cocoa Percent between Different Companies<a class="headerlink" href="#analyzing-the-difference-of-cocoa-percent-between-different-companies" title="Permalink to this headline">¶</a></h1>
+<p>Even though the dataset is said to include over 2500 dark chocolate bars, different dark chocolate bars have different percentage of cocoa included. In the following analysis, we are trying to see if there would be a difference in the cocoa percentage of chocolate bars produced by different companies. Specifically, we calculate the mean, median, maximum and minimum cocoa percent of chocolate bars made by each company.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;tables/company_cocoa_percent.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Company (Manufacturer)</th>
+      <th>mean cocoa percent</th>
+      <th>median cocoa percent</th>
+      <th>max cocoa percent</th>
+      <th>min cocoa percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Pacari</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Coppeneur</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>TCHO</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>99.0</td>
+      <td>99.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Bouga Cacao (Tulicorp)</td>
+      <td>88.5</td>
+      <td>88.5</td>
+      <td>100.0</td>
+      <td>77.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Pralus</td>
+      <td>87.5</td>
+      <td>87.5</td>
+      <td>100.0</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>399</th>
+      <td>Machu Picchu Trading Co.</td>
+      <td>62.5</td>
+      <td>62.5</td>
+      <td>70.0</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>400</th>
+      <td>Two Ravens</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>401</th>
+      <td>La Pepa de Oro</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>402</th>
+      <td>Valrhona</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>403</th>
+      <td>Kiskadee</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+      <td>60.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>404 rows × 5 columns</p>
+</div></div></div>
+</div>
+<p>From the table above, we can clearly see that there is a difference in the cocoa percent of the dark chocolate bars produced by different companies, and the range of cocoa percent is from 60% to 100%. Therefore, even if all the chocolate bars are categorized as dark chocolate bar, there’s a pretty big difference in the actual cocoa percent included in different bars, and customers should pay attention to this information when purchasing dark chocolate bars.</p>
+</div>
+<div class="section" id="analyzing-if-the-average-cocoa-percent-of-different-chocolate-bars-has-changed-over-times">
+<h1>5. Analyzing if the Average Cocoa Percent of Different Chocolate Bars has changed Over Times<a class="headerlink" href="#analyzing-if-the-average-cocoa-percent-of-different-chocolate-bars-has-changed-over-times" title="Permalink to this headline">¶</a></h1>
+<p>Moving on, we will analyze to see if the averge cocoa percent of different chocolate bars from different companies has changed over times. Intuitively, there shouldn’t be any big differences between the average cocoa percent of different years since a change in cocoa percent in different years would mean that many companies suddenly decided to change their cocoa percent included in their bars in that year (which would result in a big change in the average cocoa percent for the year after), and that is not likely to happen. To verify our assumptions, we calculated the mean, median, maximum and minimum cocoa percent of chocolate bars over each year.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;tables/year_cocoa_percent.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Review Date</th>
+      <th>mean cocoa percent</th>
+      <th>median cocoa percent</th>
+      <th>max cocoa percent</th>
+      <th>min cocoa percent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2006</td>
+      <td>75.454545</td>
+      <td>75.0</td>
+      <td>100.0</td>
+      <td>70.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2007</td>
+      <td>73.913043</td>
+      <td>70.0</td>
+      <td>100.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2008</td>
+      <td>75.392857</td>
+      <td>70.5</td>
+      <td>100.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2009</td>
+      <td>72.854545</td>
+      <td>72.0</td>
+      <td>100.0</td>
+      <td>64.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2010</td>
+      <td>72.330000</td>
+      <td>72.0</td>
+      <td>100.0</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2011</td>
+      <td>71.369565</td>
+      <td>70.0</td>
+      <td>88.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2012</td>
+      <td>71.955752</td>
+      <td>70.0</td>
+      <td>100.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2013</td>
+      <td>74.378947</td>
+      <td>72.0</td>
+      <td>100.0</td>
+      <td>55.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2014</td>
+      <td>72.801948</td>
+      <td>72.0</td>
+      <td>100.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2015</td>
+      <td>72.128713</td>
+      <td>70.0</td>
+      <td>100.0</td>
+      <td>57.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2016</td>
+      <td>72.603659</td>
+      <td>70.0</td>
+      <td>100.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2017</td>
+      <td>71.725000</td>
+      <td>70.0</td>
+      <td>81.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2018</td>
+      <td>71.293605</td>
+      <td>70.0</td>
+      <td>85.0</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>2019</td>
+      <td>72.034351</td>
+      <td>70.0</td>
+      <td>85.0</td>
+      <td>65.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2020</td>
+      <td>70.805970</td>
+      <td>70.0</td>
+      <td>75.0</td>
+      <td>65.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>2021</td>
+      <td>72.195122</td>
+      <td>70.0</td>
+      <td>100.0</td>
+      <td>66.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;figures/cocoa_percent_change_over_years.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/main_43_0.png" src="_images/main_43_0.png" />
+</div>
+</div>
+<p>From our table and plot above, we can see that the mean and median cocoa percent in chocolate bars have little changes over years, ranging from 70% to 75%, and we are able to conclude that there’s little difference between the average cocoa percent in chocolate bars over years. However, from the plot and table, we can see that the maximum cocoa percent in chocolate bars has a sharp drop to 80%-85% over year 2017 to 2020. More data needs to be provided and more analysis needs to be done to explain that abnormal drop.</p>
+</div>
+<div class="section" id="analysis-of-testing-if-a-country-of-bean-origin-has-a-standout-characteristics">
+<h1>6. Analysis of testing if a country of bean origin has a standout characteristics<a class="headerlink" href="#analysis-of-testing-if-a-country-of-bean-origin-has-a-standout-characteristics" title="Permalink to this headline">¶</a></h1>
+<p>In this part of the analysis, we are trying to see if a country of bean origin has a standout characterics. To achieve this, we took a closer look at the ‘Most Memorable Characteristics’ feature and analyzed if there’s a specific characteristic that is mentioned for a country of bean origin for multiple times. However, the results show that there isn’t a standout characteristic for most of the countries, and only three countries has a characteristic that appeared more than 10% of times: Vanuatu, Malaysia, Papua New Guinea.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">chocolate</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/chocolate.csv&#39;</span><span class="p">)</span>
+
+<span class="n">Vanuatu</span> <span class="o">=</span> <span class="n">country_common_charac</span><span class="p">(</span><span class="n">chocolate</span><span class="p">,</span> <span class="s2">&quot;Vanuatu&quot;</span><span class="p">)</span>
+<span class="n">Malaysia</span> <span class="o">=</span> <span class="n">country_common_charac</span><span class="p">(</span><span class="n">chocolate</span><span class="p">,</span> <span class="s2">&quot;Malaysia&quot;</span><span class="p">)</span>
+<span class="n">Papua</span> <span class="o">=</span> <span class="n">country_common_charac</span><span class="p">(</span><span class="n">chocolate</span><span class="p">,</span> <span class="s2">&quot;Papua New Guinea&quot;</span><span class="p">)</span>
+
+<span class="n">dfs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Vanuatu&#39;</span><span class="p">:</span> <span class="n">Vanuatu</span><span class="p">,</span> <span class="s1">&#39;Malaysia&#39;</span><span class="p">:</span> <span class="n">Malaysia</span><span class="p">,</span> <span class="s1">&#39;Papua New Guinea&#39;</span><span class="p">:</span> <span class="n">Papua</span><span class="p">}</span>
+<span class="n">display_dfs</span><span class="p">(</span><span class="n">dfs</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s1">&#39;flex-start&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+    <div style="display:flex; gap:50px; justify-content:flex-start;">
+        <div> <h3>Vanuatu</h3> <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>characteristics</th>
+      <th>frequency</th>
+      <th>percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>sweet</td>
+      <td>4</td>
+      <td>0.142857</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>cocoa</td>
+      <td>3</td>
+      <td>0.107143</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>woody</td>
+      <td>2</td>
+      <td>0.071429</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>smokey</td>
+      <td>2</td>
+      <td>0.071429</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>mocha</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>sour milk</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>bready</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>rich cocoa</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>creamy</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>nutty</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>butterscotch</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>sticky</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>fruit</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>strong distinct spice</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>spicy</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>sandy</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>rubbery</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>basic</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>metallic</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>unrefined</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>fatty</td>
+      <td>1</td>
+      <td>0.035714</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div> <h3>Malaysia</h3> <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>characteristics</th>
+      <th>frequency</th>
+      <th>percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>sweet</td>
+      <td>2</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>dairy</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>woody</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>smokey</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>earthy</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>spice</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>caramel</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>mild sour</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>cocoa</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>banana raspberry</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>dirty</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>high roast</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>sour</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>savory</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>grassy</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>chemical off note</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>fruit</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>off notes</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>tobacco</td>
+      <td>1</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div> <h3>Papua New Guinea</h3> <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>characteristics</th>
+      <th>frequency</th>
+      <th>percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>smoke</td>
+      <td>11</td>
+      <td>0.127907</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>smokey</td>
+      <td>7</td>
+      <td>0.081395</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>fruit</td>
+      <td>7</td>
+      <td>0.081395</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ham</td>
+      <td>5</td>
+      <td>0.058140</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>sour</td>
+      <td>4</td>
+      <td>0.046512</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>hammy</td>
+      <td>3</td>
+      <td>0.034884</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>astringent</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>tart</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>sour fruit</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>intense</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>red berry</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>mild smoke</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>sandy</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>fatty</td>
+      <td>2</td>
+      <td>0.023256</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>woodsy</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>cherries</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>plum</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>savory lemon</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>molasses</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>grassy</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>creamy</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>mushroom</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>mild burnt</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>nut</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>intensely smokey</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>dates</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>musty</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>mild smoke and fruit</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>raspberry,cocoa</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>rubbery</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>vegetal</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>sour milk</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>smomkey cocoa</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>gritty</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>sticky</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>smoke,hammy</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>few grits</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>intense smoke</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>bitter</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>coffee</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>papaya</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>chewy</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>cocoa</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>savory</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>off</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>tropical</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>heavy smoke</td>
+      <td>1</td>
+      <td>0.011628</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+    </div>
+</div></div>
+</div>
+<p>From the table above, we can see that beans from Papua New Guinea has a pretty unique and standout characteristic “smokey” while the other two countries (Vanuatu and Malaysia) has the characteristic “sweet” as their most common characteristic. Overall, we conclude that there tends not to be a standout characteristic for beans from a specific country since most of the country didn’t have a characteristic that is mentioned more than 10% of times. However, this result may be biased because we don’t have much information and data regarding the characteristics of each country’s beans and chocolate bars.</p>
+</div>
+<div class="section" id="author-contributions">
+<h1>Author Contributions<a class="headerlink" href="#author-contributions" title="Permalink to this headline">¶</a></h1>
+<p>Runting Han: For this project, I analyzed the difference of cocoa percent between different companies and the change of cocoa percent in chocolate bars over years (the ‘Cocoa_percent_change_analysis.ipynb’ notebook) and performed the analysis to see if a country of bean origin has a standout characteristic (the ‘common_charac_for_country_analysis.ipynb’ notebook). In the analysis, I wrote functions and imported them from a separate python script (‘functions/utils.py’) along with tests and documentation and also added the pyproj.toml file. I also summarized and discussed my results for the two analysis in the ‘main.ipynb’ notebook. Also, I added LICENSE and a git ignore file for our project. Lastly, I collaborated with other team members for the project goals section in README.</p>
+<p>Lia Chin-Purcell: For this project, I conducted regresssion analysis to determine memorable characteristics that have significant inlfuence on ratings in most_memorable_characteristic_regression.ipynb file and based on the p-value I seperately analyzed the positive and negative effect memorable characteristics. Also I made an environment.yml file and baseline for REAME file.</p>
+<p>Minji Park: In analysis_for_review_ratings.ipynb file, I analyzed the 5 most frequent words in Most Memorable Characteristics and relationship between Cocoa Percent and review ratings. For 5 most frequent words I only focused on review rating between 1-2 and 4-5, but for Cocoa Percent I draw the box plot for every review interval. Also, I wrote the function and tests for the function in analysis_for_review_ratings.ipynb file and made <a class="reference external" href="http://setup.py">setup.py</a>, setup.cfg. Lastly, I collaborated with other team members for README.file.</p>
+<p>Jenea Spinks: My notebook is the ingredients_analysis.ipynb. For this project, I firstly analyzed the company locations with the highest and lowest average rating for their chocolate bars. Using this, I analyzed the ingredients average rating and looked at those with the highest and lowest rating. I combined these two to see if the ingredients used contributed to the comanies high or low overall mean ratings. Also, I looed at how the average rating for each year changed over time and obtained the ingredients used the most within the year. I summarized and wrote my reults within this main.ipynb. I also created a Makefile and worked with my team members on the <a class="reference external" href="http://README.md">README.md</a> file</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Lia Chin-Purcell, Minji Park, Runting Han, Jenea Spinks<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
